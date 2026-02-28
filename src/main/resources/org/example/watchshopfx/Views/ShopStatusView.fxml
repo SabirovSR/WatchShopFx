@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="190.0" prefWidth="310.0" style="-fx-border-color: gray;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.watchshopfx.Controllers.ShopStatusViewController">
+   <children>
+      <Label alignment="CENTER" layoutX="15.0" layoutY="12.0" prefHeight="24.0" prefWidth="280.0" text="Состояние магазина">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="45.0" prefHeight="20.0" prefWidth="170.0" text="Кол-во часов:" />
+      <Label layoutX="18.0" layoutY="67.0" prefHeight="20.0" prefWidth="170.0" text="Стоимость часов:" />
+      <Label layoutX="18.0" layoutY="89.0" prefHeight="20.0" prefWidth="170.0" text="Капитал:" />
+      <Label layoutX="18.0" layoutY="111.0" prefHeight="20.0" prefWidth="170.0" text="Ошибки времени:" />
+      <Label layoutX="18.0" layoutY="133.0" prefHeight="20.0" prefWidth="170.0" text="Продано (шт):" />
+      <Label layoutX="18.0" layoutY="155.0" prefHeight="20.0" prefWidth="170.0" text="Продано (сумма):" />
+
+      <Label fx:id="watchCountLabel" alignment="CENTER_RIGHT" layoutX="190.0" layoutY="45.0" prefHeight="20.0" prefWidth="105.0" />
+      <Label fx:id="inventoryCostLabel" alignment="CENTER_RIGHT" layoutX="190.0" layoutY="67.0" prefHeight="20.0" prefWidth="105.0" />
+      <Label fx:id="cashBalanceLabel" alignment="CENTER_RIGHT" layoutX="190.0" layoutY="89.0" prefHeight="20.0" prefWidth="105.0" />
+      <Label fx:id="invalidTimeErrorsLabel" alignment="CENTER_RIGHT" layoutX="190.0" layoutY="111.0" prefHeight="20.0" prefWidth="105.0" />
+      <Label fx:id="soldCountLabel" alignment="CENTER_RIGHT" layoutX="190.0" layoutY="133.0" prefHeight="20.0" prefWidth="105.0" />
+      <Label fx:id="soldAmountLabel" alignment="CENTER_RIGHT" layoutX="190.0" layoutY="155.0" prefHeight="20.0" prefWidth="105.0" />
+   </children>
+</Pane>
+

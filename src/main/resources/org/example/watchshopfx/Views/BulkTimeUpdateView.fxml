@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="95.0" prefWidth="310.0" style="-fx-border-color: gray;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.watchshopfx.Controllers.BulkTimeUpdateViewController">
+   <children>
+      <Label alignment="CENTER" layoutX="15.0" layoutY="10.0" prefHeight="24.0" prefWidth="280.0" text="Время для всех часов">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="allTimeField" layoutX="15.0" layoutY="45.0" prefHeight="32.0" prefWidth="125.0" promptText="ЧЧ:ММ" text="12:00" />
+      <Button layoutX="150.0" layoutY="45.0" mnemonicParsing="false" onAction="#start" prefHeight="32.0" prefWidth="145.0" text="SET ALL" />
+   </children>
+</Pane>

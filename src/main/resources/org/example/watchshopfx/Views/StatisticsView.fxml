@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="190.0" prefWidth="310.0" style="-fx-border-color: gray;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.watchshopfx.Controllers.StatisticsViewController">
+   <children>
+      <Label alignment="TOP_CENTER" layoutX="15.0" layoutY="12.0" prefHeight="24.0" prefWidth="280.0" text="Статистика по маркам">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ScrollPane fx:id="StatList" fitToWidth="true" layoutX="15.0" layoutY="42.0" prefHeight="135.0" prefWidth="280.0">
+         <content>
+            <VBox fx:id="brandStatsBox" prefHeight="0.0" prefWidth="0.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</Pane>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="190.0" prefWidth="310.0" style="-fx-border-color: gray;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.watchshopfx.Controllers.AddWatchViewController">
+   <children>
+      <Label layoutX="95.0" layoutY="14.0" text="Добавить часы" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="52.0" text="Марка" />
+      <Label layoutX="15.0" layoutY="87.0" text="Стартовое время" />
+      <Label layoutX="15.0" layoutY="122.0" text="Стоимость" />
+      <ComboBox fx:id="brandComboBox" layoutX="145.0" layoutY="47.0" prefHeight="30.0" prefWidth="150.0" />
+      <TextField fx:id="timeField" layoutX="145.0" layoutY="82.0" prefHeight="30.0" prefWidth="150.0" />
+      <TextField fx:id="costField" layoutX="145.0" layoutY="117.0" prefHeight="30.0" prefWidth="150.0" />
+      <Button fx:id="addButton" layoutX="15.0" layoutY="154.0" mnemonicParsing="false" onAction="#add" prefHeight="30.0" prefWidth="280.0" text="Добавить в магазин" />
+   </children>
+</Pane>
