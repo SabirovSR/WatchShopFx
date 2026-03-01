@@ -17,6 +17,7 @@ import java.util.stream.Collectors;
 
 public class ShopModel implements Iterable<Watch> {
     private static final List<String> KNOWN_BRANDS = List.of(
+            "Apple",
             "Casio",
             "Citizen",
             "Seiko",
@@ -44,10 +45,7 @@ public class ShopModel implements Iterable<Watch> {
         addInitialWatch("Citizen", 21900, "08:40");
         addInitialWatch("Orient", 19900, "17:25");
         addInitialWatch("Garmin", 32900, "06:55");
-    }
-
-    public List<Watch> getAllWatches() {
-        return List.copyOf(allWatches);
+        addInitialWatch("Garmin", 70900, "06:00");
     }
 
     public int countWatches() {
@@ -94,13 +92,6 @@ public class ShopModel implements Iterable<Watch> {
                 .collect(Collectors.toList());
     }
 
-    public String mostFrequentBrand() {
-        return getBrandStatisticsDesc().stream()
-                .findFirst()
-                .map(Map.Entry::getKey)
-                .orElse("-");
-    }
-
     public List<Map.Entry<String, Integer>> getBrandStatisticsDesc() {
         Map<String, Integer> counts = new HashMap<>();
         for (Watch watch : allWatches) {
@@ -121,10 +112,6 @@ public class ShopModel implements Iterable<Watch> {
         return new ArrayList<>(new TreeSet<>(allWatches.stream()
                 .map(Watch::getBrand)
                 .collect(Collectors.toList())));
-    }
-
-    public List<String> getKnownBrands() {
-        return KNOWN_BRANDS;
     }
 
     public List<String> getBrandSuggestionsSorted() {

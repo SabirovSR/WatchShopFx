@@ -8,7 +8,7 @@
 
 <Pane prefHeight="95.0" prefWidth="310.0" style="-fx-border-color: gray;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.watchshopfx.Controllers.MostExpensiveWatchViewController">
    <children>
-      <Label alignment="TOP_CENTER" layoutX="15.0" layoutY="10.0" prefHeight="24.0" prefWidth="280.0" text="Самый дорогой">
+      <Label alignment="TOP_CENTER" layoutX="15.0" layoutY="10.0" prefHeight="24.0" prefWidth="280.0" text="Самый дорогие часы">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>

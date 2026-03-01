@@ -19,10 +19,6 @@ public class StoreStateModel {
         eventCall();
     }
 
-    public int getInitialCapital() {
-        return INITIAL_CAPITAL;
-    }
-
     public int getInvalidTimeErrors() {
         return invalidTimeErrors;
     }
@@ -53,14 +49,6 @@ public class StoreStateModel {
 
     public void onInvalidTimeInput() {
         invalidTimeErrors++;
-        eventCall();
-    }
-
-    public void resetFinance() {
-        invalidTimeErrors = 0;
-        soldCount = 0;
-        soldAmount = 0;
-        cashBalance = INITIAL_CAPITAL;
         eventCall();
     }
 

@@ -28,14 +28,6 @@ public class Watch {
         return cost;
     }
 
-    public int getHours() {
-        return hours;
-    }
-
-    public int getMinutes() {
-        return minutes;
-    }
-
     public String getTimeString() {
         return String.format("%02d:%02d", hours, minutes);
     }
@@ -44,13 +36,6 @@ public class Watch {
         int[] parsed = parseTime(time);
         hours = parsed[0];
         minutes = parsed[1];
-    }
-
-    public void moveForward(String shift) throws InvalidWatchTimeException {
-        int[] parsed = parseTime(shift);
-        int totalMinutes = (hours * 60 + minutes + parsed[0] * 60 + parsed[1]) % (24 * 60);
-        hours = totalMinutes / 60;
-        minutes = totalMinutes % 60;
     }
 
     private int[] parseTime(String time) throws InvalidWatchTimeException {

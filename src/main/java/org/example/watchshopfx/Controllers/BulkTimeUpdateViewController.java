@@ -19,7 +19,7 @@ public class BulkTimeUpdateViewController {
     TextField allTimeField;
 
     @FXML
-    void start() {
+    void setAllTime() {
         try {
             shopModel.setTimeForAll(allTimeField.getText());
             consoleModel.addMessage("На всех часах установлено время: " + allTimeField.getText());
